@@ -1,0 +1,93 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefbf8 rgb(254, 251,248);
+  color: #222;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px ;
+  flex-wrap: wrap;
+}
+
+.texto {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.azul {
+  color: #9b59b6; /* lavanda */
+}
+
+.verde {
+  color: #2ecc71; /* verde menta */
+}
+
+.laranja {
+  color: #f39c12; /* coral/dourado claro */
+}
+
+.descricao p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #222;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #7fb4d4;
+}
+
+.imagem img {
+  max-width: 100%; /* ou 70%, dependendo do tamanho que deseja */
+  height: auto;
+}
+
+.imagem{
+  flex: 1 1 20%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.intro-container {
+  padding-left: 10%;
+  padding-right: 2%; /* Aproxima o conteúdo da direita */
+}
